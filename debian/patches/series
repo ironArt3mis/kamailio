@@ -3,3 +3,4 @@
 003_lcr_rule_id_avp.patch
 004_redis_sentinel.patch
 005_increase_kamcmd_maxsize.patch
+006_redis_sentinel_reconnect.patch
