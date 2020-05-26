@@ -6,3 +6,4 @@
 006_redis_sentinel_reconnect.patch
 007_skip_cdr.patch
 008_lcr_dump_gw.patch
+009_lcr_ping_gw_id.patch
