@@ -4,3 +4,6 @@
 004_redis_sentinel.patch
 005_increase_kamcmd_maxsize.patch
 006_redis_sentinel_reconnect.patch
+007_skip_cdr.patch
+008_lcr_dump_gw.patch
+009_lcr_ping_gw_id.patch
