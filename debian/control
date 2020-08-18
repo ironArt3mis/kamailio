@@ -25,7 +25,8 @@ Build-Depends: bison,
                openssl,
                uuid-dev,
                pkg-config,
-               zlib1g-dev
+               zlib1g-dev,
+               libmaxminddb-dev
 Standards-Version: 3.9.5
 Homepage: http://www.irontec.com
 
@@ -41,7 +42,8 @@ Depends: adduser,
 Suggests: ivozprovider-kamailio-mysql-modules,
           ivozprovider-kamailio-tls-modules,
           ivozprovider-kamailio-xml-modules,
-          ivozprovider-kamailio-redis-modules
+          ivozprovider-kamailio-redis-modules,
+          ivozprovider-kamailio-geoip-modules
 Description: IVOZ Provider - Kamailio 5.1 - very fast and configurable SIP proxy
  kamailio is a very fast and flexible SIP (RFC3261)
  proxy server. Written entirely in C, kamailio can handle thousands calls
@@ -201,3 +203,16 @@ Description: IVOZ Provider - Kamailio 5.1 - Redis database connectivity
  per second even on low-budget hardware.
  .
  This package provides the Redis NOSQL database driver for Kamailio
+
+
+Package: ivozprovider-kamailio-geoip-modules
+Architecture: linux-any
+Multi-Arch: same
+Replaces: kamailio-geoip-modules
+Conflicts: kamailio-geoip-modules
+Description: IVOZ Provider - Kamailio 5.1 - GeoIP module
+ kamailio is a very fast and flexible SIP (RFC3261)
+ proxy server. Written entirely in C, kamailio can handle thousands calls
+ per second even on low-budget hardware.
+ .
+ This package provides the GeoIP module for Kamailio
