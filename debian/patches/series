@@ -7,3 +7,4 @@
 007_skip_cdr.patch
 008_lcr_dump_gw.patch
 009_lcr_ping_gw_id.patch
+010_dialog_profile_end.patch
