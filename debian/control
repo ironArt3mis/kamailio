@@ -43,7 +43,7 @@ Suggests: ivozprovider-kamailio-mysql-modules,
           ivozprovider-kamailio-tls-modules,
           ivozprovider-kamailio-xml-modules,
           ivozprovider-kamailio-redis-modules,
-          ivozprovider-kamailio-geoip-modules
+          ivozprovider-kamailio-geoip2-modules
 Description: IVOZ Provider - Kamailio 5.1 - very fast and configurable SIP proxy
  kamailio is a very fast and flexible SIP (RFC3261)
  proxy server. Written entirely in C, kamailio can handle thousands calls
@@ -205,11 +205,14 @@ Description: IVOZ Provider - Kamailio 5.1 - Redis database connectivity
  This package provides the Redis NOSQL database driver for Kamailio
 
 
-Package: ivozprovider-kamailio-geoip-modules
+Package: ivozprovider-kamailio-geoip2-modules
 Architecture: linux-any
 Multi-Arch: same
-Replaces: kamailio-geoip-modules
-Conflicts: kamailio-geoip-modules
+Replaces: kamailio-geoip2-modules
+Conflicts: kamailio-geoip2-modules
+Depends: ivozprovider-kamailio (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: IVOZ Provider - Kamailio 5.1 - GeoIP module
  kamailio is a very fast and flexible SIP (RFC3261)
  proxy server. Written entirely in C, kamailio can handle thousands calls
